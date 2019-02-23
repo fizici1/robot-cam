@@ -1,0 +1,12 @@
+extends layout.pug
+
+append heads
+	link(href="/stylesheets/nv.d3.css" rel="stylesheet" type="text/css")
+
+block content
+	h1 Données des capteurs
+	#temp Température
+	#hum Humidité
+	
+append scripts
+	script(src='/javascripts/capteurs.js')

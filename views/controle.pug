@@ -1,0 +1,104 @@
+extends layout.pug
+
+block content
+	.row
+		h1 Contrôle des servomoteurs
+	.row.justify-content-center
+		.col-md-4#livestream
+		.col-md-4
+			.well
+				p
+					b 0 :
+					input#servo0(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="100"
+						data-slider-max="600"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+			.well
+				p
+					b 1 :
+					input#servo1(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="100"
+						data-slider-max="600"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+			.well
+				p
+					b 2 :
+					input#servo2(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="109"
+						data-slider-max="530"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+			.well
+				p
+					b 3 :
+					input#servo3(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="109"
+						data-slider-max="530"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+		.col-md-4
+			.well
+				p
+					b 12 :
+					input#servo12(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="109"
+						data-slider-max="530"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+			.well
+				p
+					b 13 :
+					input#servo13(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="109"
+						data-slider-max="530"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+			.well
+				p
+					b 14 :
+					input#servo14(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="109"
+						data-slider-max="530"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+			.well
+				p
+					b 15 :
+					input#servo15(
+						data-slider-id='servo1slider'
+						type="text"
+						data-slider-min="109"
+						data-slider-max="530"
+						data-slider-step="10"
+						data-slider-value="200"
+						)
+			
+
+append scripts
+	script(type="text/javascript", src="/javascripts/http-live-player.js")
+	script(src='/javascripts/bootstrap-slider.js')
+	script(src='/javascripts/controle.js')
+	
